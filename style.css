@@ -1,0 +1,13 @@
+
+body{
+    background-color: white;
+    color: black;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+li{
+    background-color: red;
+    color: white;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

@@ -1,13 +1,23 @@
 
-body{
+p{
     background-color: white;
     color: black;
     font-size: large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-li{
+a{
     background-color: red;
     color: white;
     font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.titulo-cap{
+    color: red;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+.hist{
+    color: black;
+    font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

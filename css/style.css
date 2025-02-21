@@ -1,16 +1,12 @@
 
+body{margin: 0;}
 p{
     background-color: white;
     color: black;
     font-size: large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-a{
-    background-color: red;
-    color: white;
-    font-size: xx-large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
 .titulo-cap{
     color: red;
     font-size: 30px;
@@ -20,4 +16,34 @@ a{
     color: black;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.pag1{
+    background-image: url('../img/Red_Dead_Redemption_2_Logo.png');
+    background-repeat: no-repeat;
+    background-position-x: 70%; 
+    background-position-y: 50%;
+    background-color: #393d42;
+}
+.textindex{
+    padding-left: 30px;
+    padding-right: 170px;
+    margin-right: 0px;
+    border: 0px;
+    background-color:red;
+    color: #393d42;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.imghist{
+    width: 40%;
+}
+
+nav{
+    background-color: yellow;
+    width: 400px;
+    height: -webkit-fill-available;;
+}
+ul{
+    list-style: none;
+    margin-left: -40px;
 }

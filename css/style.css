@@ -1,5 +1,21 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-body{margin: 0;}
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
 p{
     background-color: white;
     color: black;
@@ -16,34 +32,67 @@ p{
     color: black;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:15px 0;
 }
-.pag1{
-    background-image: url('../img/Red_Dead_Redemption_2_Logo.png');
-    background-repeat: no-repeat;
-    background-position-x: 70%; 
-    background-position-y: 50%;
-    background-color: #393d42;
-}
+
 .textindex{
     padding-left: 30px;
-    padding-right: 170px;
+    padding-right: 0%;
     margin-right: 0px;
     border: 0px;
-    background-color:red;
-    color: #393d42;
+    color: white;
     font-size: xx-large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
 }
 .imghist{
     width: 40%;
+    margin: 35px;
+    margin-left: 30%;
+    margin-bottom: 70px;
 }
 
 nav{
-    background-color: yellow;
+    background-color: red;
     width: 400px;
-    height: -webkit-fill-available;;
+    max-width: 400px;
+    height: -webkit-fill-available;
+    padding-left: 15px;
 }
 ul{
     list-style: none;
     margin-left: -40px;
+    color: white;
+}
+li{
+    margin: 10px 0;
+    padding: 5px 0px;
+    background-color: red;
+}
+
+.conteudo{
+    flex-basis: 80%;   
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.conteudo.principal{
+    background-image: url('../img/Red-Dead-Redemption-2.jpg.webp');
+    background-repeat: no-repeat;
+    background-position-x: 70%; 
+    background-position-y: 50%;
+    background-color: #393d42;
+    width: 100%;
+    background-color: black;
+}
+.logo{
+    width: 350px;
+    padding-left: 30px;
+}
+.rockstar{
+    width: 100px;
+    margin-top: 820px;
+    margin-left: 1380px;
+    margin-bottom: 0px;
+    margin-right: 0px;
 }

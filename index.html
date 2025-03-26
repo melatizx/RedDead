@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scaled=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <title>
             rdr2.com
@@ -14,13 +14,63 @@
                 <li><a class="textindex" href="index.html"><b>Inicio</b></a></li>
                 <li><a class="textindex" href="historia.html" ><b>Historia</b></a></li>
                 <li><a class="textindex" href="..." ><b>Personagens</b></a></li>
-                <li><a class="textindex" href="..." ><b>Gangues</b></a></li>
+                <li><a class="textindex" href="" onclick="abrirMenuCompendio('leo');" ><b>Compêndio</b></a></li>
                 <li><a class="textindex" href="..." ><b>Animais Lendarios</b></a></li>
-                <li><a class="textindex" href="..." ><b>Premios</b></a></li>                
+                <li><a class="textindex" href="..." ><b>Peixes Lendarios</b></a></li>   
+                <li><a class="textindex" href="..." ><b>Desafios</b></a></li>  
+                <li><a class="textindex" href="..." ><b>Premios</b></a></li>  
+                <li><a class="textindex" href="..." ><b>Premios</b></a></li>              
             </ul>
         </nav>
+        <nav class="menu-compendio">
+            <ul>
+                <li><a class="" href="#"><b>1</b></a></li>
+                <li><a class="" href="#" ><b>2</b></a></li>
+                <li><a class="" href="..." ><b>3s</b></a></li>
+                <li><a class="" href="..." ><b>Compêndio</b></a></li>
+                <li><a class="" href="..." ><b>Animais Lendarios</b></a></li>
+                <li><a class="" href="..." ><b>Peixes Lendarios</b></a></li>   
+                <li><a class="" href="..." ><b>Desafios</b></a></li>  
+                <li><a class="" href="..." ><b>Premios</b></a></li>  
+                <li><a class="" href="..." ><b>Premios</b></a></li>              
+            </ul>
+        </nav>        
         <section class="conteudo principal">
             <img class="rockstar" src="img/rockstar.png">
         </section>
+    <script>
+        // function abrirMenuCompendio(nome) {
+        //     document.getElementsByClassName("menu-compendio").style.display = "block";;
+        //     alert(nome);
+        //     alert("Cliquei");
+        //     const menu = document.getElementsByClassName("menu-compendio");
+        //     console.log(menu);
+        //     menu.style.display = "block";
+        //     document.getElementById("myDIV").style.display = "none";
+
+            
+
+        // }
+
+        //const listaTintas = document.querySelector('[data-lista-tintas]');
+        const menu = document.getElementsByClassName("menu-compendio");
+
+        botaoAparecer.onclick = () => {
+            aparecer(menu);
+  
+        };
+
+        botaoFecharLista.onclick = () => {
+            desaparecer(menu);          
+        }
+
+        function aparecer(elementoHtml) {
+            elementoHtml.style.display = "block";
+        } 
+
+        function desaparecer(elementoHtml) {
+            elementoHtml.style.display = "none";
+        }
+    </script>
     </body>
 </html>

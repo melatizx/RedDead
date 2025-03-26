@@ -1,0 +1,9 @@
+Compendio
+-animais
+-equipamento
+-peixes
+-gangues
+-plantas
+-cavalos
+-armas
+-cartas 

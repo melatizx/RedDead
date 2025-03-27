@@ -3,9 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: chineserocksrog;
+    src: url(fonte/chineserocksrg.otf);
+  }
 
 html{
     height: 100%;
+    font-family: chineserocksrog;
+    /* text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black; */
+    letter-spacing: 1.05pt;
 }
 body{
     margin: 0;
@@ -18,20 +25,17 @@ body{
 }
 p{
     background-color: white;
-    color: black;
+    color: white;
     font-size: large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .titulo-cap{
     color: red;
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    font-size: 30px;   
 }
 .hist{
-    color: black;
+    color: white;
     font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin:15px 0;
 }
 
@@ -42,7 +46,6 @@ p{
     border: 0px;
     color: white;
     font-size: xx-large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
 }
 .imghist{
@@ -58,6 +61,9 @@ nav{
     max-width: 400px;
     height: -webkit-fill-available;
     padding-left: 15px;
+}
+.menu ul{
+    height: 100vh;
 }
 ul{
     list-style: none;
@@ -105,4 +111,22 @@ li{
     color: black;
     width: 100%;
     height: 360px;
+}
+.animaislendsec{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.animaislendloc{
+    width: 400px;
+    height: 200px;
+}
+.tittleanilend{
+    display: block;
+}
+.lendarios{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
 }

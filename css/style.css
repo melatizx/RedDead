@@ -112,21 +112,49 @@ li{
     width: 100%;
     height: 360px;
 }
-.animaislendsec{
+.lendarios{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.animaislendloc{
-    width: 400px;
-    height: 200px;
+    flex-direction: row;
+    justify-content: center;
 }
 .tittleanilend{
-    display: block;
+    font-size: 40px;
 }
-.lendarios{
+.animaislend{
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
+}
+.imagensanimaislen{
+    width: 570px;
+    height: 300px;
+    margin: 30px;
+}
+.explicacao{
+    color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.subtitulolendani{
+    font-size: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.listacaca{
+    background-color: white;
+    padding: 0;
+    margin-left: 70px;
+    margin-right: 50px;
+}
+.menu-compendio{
+    float: left;
+    position: absolute;
+    display: none;
+    background-color: red;
+    width: 400px;
+    max-width: 400px;
+    height: -webkit-fill-available;
+    padding-left: 15px;
+    
 }

@@ -5,7 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <style>
-            
+            .espacamento{
+                background-color: red;
+            }
         </style>
         <title>
             rdr2.com
@@ -18,7 +20,7 @@
                 <li><a class="textindex" href="index.html"><b>Inicio</b></a></li>
                 <li><a class="textindex" href="historia.html" ><b>Historia</b></a></li>
                 <li><a class="textindex" href="..." ><b>Personagens</b></a></li>
-                <li><a class="textindex" href="" onclick="abrirMenuCompendio('leo');" ><b>Compêndio</b></a></li>
+                <li><a class="textindex" href="" id="btn-compendio"><b>Compêndio</b></a></li>
                 <li><a class="textindex" href="animaislend.html" ><b>Animais Lendarios</b></a></li>
                 <li><a class="textindex" href="..." ><b>Peixes Lendarios</b></a></li>   
                 <li><a class="textindex" href="..." ><b>Desafios</b></a></li>  
@@ -26,55 +28,47 @@
                 <li><a class="textindex" href="..." ><b>Premios</b></a></li>              
             </ul>
         </nav>
-        <nav class="menu-compendio">
+
+        <!-- Submenu Compêndio -->
+        <nav class="menu-compendio" id="submenu-compendio">
             <ul>
-                <li><a class="" href="#"><b>1</b></a></li>
-                <li><a class="" href="#" ><b>2</b></a></li>
-                <li><a class="" href="..." ><b>3s</b></a></li>
-                <li><a class="" href="..." ><b>Compêndio</b></a></li>
-                <li><a class="" href="..." ><b>Animais Lendarios</b></a></li>
-                <li><a class="" href="..." ><b>Peixes Lendarios</b></a></li>   
-                <li><a class="" href="..." ><b>Desafios</b></a></li>  
-                <li><a class="" href="..." ><b>Premios</b></a></li>  
-                <li><a class="" href="..." ><b>Premios</b></a></li>              
+                <li><p class="espacamento">&nbsp</p></li>
+                <li><a class="textindex" href="#"><b>1</b></a></li>
+                <li><a class="textindex" href="#" ><b>2</b></a></li>
+                <li><a class="textindex" href="..." ><b>3s</b></a></li>
+                <li><a class="textindex" href="..." ><b>Compêndio</b></a></li>
+                <li><a class="textindex" href="..." ><b>Animais Lendarios</b></a></li>
+                <li><a class="textindex" href="..." ><b>Peixes Lendarios</b></a></li>   
+                <li><a class="textindex" href="..." ><b>Desafios</b></a></li>  
+                <li><a class="textindex" href="..." ><b>Premios</b></a></li>  
+                <li><a class="textindex" href="..." ><b>Premios</b></a></li>              
             </ul>
         </nav>        
         <section class="conteudo principal">
             <img class="rockstar" src="img/rockstar.png">
         </section>
-    <script>
-        // function abrirMenuCompendio(nome) {
-        //     document.getElementsByClassName("menu-compendio").style.display = "block";;
-        //     alert(nome);
-        //     alert("Cliquei");
-        //     const menu = document.getElementsByClassName("menu-compendio");
-        //     console.log(menu);
-        //     menu.style.display = "block";
-        //     document.getElementById("myDIV").style.display = "none";
-
-            
-
-        // }
-
-        //const listaTintas = document.querySelector('[data-lista-tintas]');
-        const menu = document.getElementsByClassName("menu-compendio");
-
-        botaoAparecer.onclick = () => {
-            aparecer(menu);
-  
-        };
-
-        botaoFecharLista.onclick = () => {
-            desaparecer(menu);          
-        }
-
-        function aparecer(elementoHtml) {
-            elementoHtml.style.display = "block";
-        } 
-
-        function desaparecer(elementoHtml) {
-            elementoHtml.style.display = "none";
-        }
-    </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const btnCompendio = document.getElementById("btn-compendio");
+                const submenuCompendio = document.getElementById("submenu-compendio");
+    
+                btnCompendio.addEventListener("click", function (event) {
+                    event.preventDefault(); // Impede o link de recarregar a página
+    
+                    if (submenuCompendio.style.display === "block") {
+                        submenuCompendio.style.display = "none";
+                    } else {
+                        submenuCompendio.style.display = "block";
+                    }
+                });
+    
+                // Fecha o submenu se clicar fora dele
+                document.addEventListener("click", function (event) {
+                    if (!btnCompendio.contains(event.target) && !submenuCompendio.contains(event.target)) {
+                        submenuCompendio.style.display = "none";
+                    }
+                });
+            });
+        </script>
     </body>
 </html>

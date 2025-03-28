@@ -7,3 +7,19 @@ Compendio
 -cavalos
 -armas
 -cartas 
+
+Animais lendarios
+-puma ok
+-antilocapra ok
+-bisao ok
+-cervo ok
+-cabra ok
+-bisao branco 
+-lobo
+-urso
+-alce
+-castor
+-javali
+-coiote
+-raposa
+-uapiti

@@ -12,6 +12,9 @@
                 color: white;
                 background-color: #1C1C1C;
             }
+            .espacamento{
+                background-color: red;
+            }
         </style>
         <title>
             rdr2.com
@@ -24,14 +27,53 @@
                 <li><a class="textindex" href="index.html"><b>Inicio</b></a></li>
                 <li><a class="textindex" href="historia.html" ><b>Historia</b></a></li>
                 <li><a class="textindex" href="..." ><b>Personagens</b></a></li>
-                <li><a class="textindex" href="..." ><b>Compêndio</b></a></li>
+                <li><a class="textindex" href="" id="btn-compendio"><b>Compêndio</b></a></li>
                 <li><a class="textindex" href="animaislend.html" ><b>Animais Lendarios</b></a></li>
                 <li><a class="textindex" href="..." ><b>Peixes Lendarios</b></a></li>   
                 <li><a class="textindex" href="..." ><b>Desafios</b></a></li>  
                 <li><a class="textindex" href="..." ><b>Premios</b></a></li>  
-                <li><a class="textindex" href="..." ><b>Premios</b></a></li>                 
+                <li><a class="textindex" href="..." ><b>Premios</b></a></li>              
             </ul>
         </nav>
+
+        <!-- Submenu Compêndio -->
+        <nav class="menu-compendio" id="submenu-compendio">
+            <ul>
+                <li><p class="espacamento">&nbsp</p></li>
+                <li><a class="textindex" href="#"><b>1</b></a></li>
+                <li><a class="textindex" href="#" ><b>2</b></a></li>
+                <li><a class="textindex" href="..." ><b>3s</b></a></li>
+                <li><a class="textindex" href="..." ><b>Compêndio</b></a></li>
+                <li><a class="textindex" href="..." ><b>Animais Lendarios</b></a></li>
+                <li><a class="textindex" href="..." ><b>Peixes Lendarios</b></a></li>   
+                <li><a class="textindex" href="..." ><b>Desafios</b></a></li>  
+                <li><a class="textindex" href="..." ><b>Premios</b></a></li>  
+                <li><a class="textindex" href="..." ><b>Premios</b></a></li>              
+            </ul>
+        </nav>        
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const btnCompendio = document.getElementById("btn-compendio");
+                const submenuCompendio = document.getElementById("submenu-compendio");
+    
+                btnCompendio.addEventListener("click", function (event) {
+                    event.preventDefault(); // Impede o link de recarregar a página
+    
+                    if (submenuCompendio.style.display === "block") {
+                        submenuCompendio.style.display = "none";
+                    } else {
+                        submenuCompendio.style.display = "block";
+                    }
+                });
+    
+                // Fecha o submenu se clicar fora dele
+                document.addEventListener("click", function (event) {
+                    if (!btnCompendio.contains(event.target) && !submenuCompendio.contains(event.target)) {
+                        submenuCompendio.style.display = "none";
+                    }
+                });
+            });
+        </script>
         <section class="conteudo">
             <b>
                 <br>

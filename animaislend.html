@@ -12,6 +12,26 @@
             .espacamento{
                 background-color: red;
             }
+            .conteudo{
+                color: white;
+                background-color: #1C1C1C;
+            }
+            .explicacao{
+                background-color: #1C1C1C;
+                color: white;
+            }
+            .listacaca{
+                background-color: #1C1C1C;
+            }
+            p{
+                background-color: #1C1C1C;
+            }
+            .mapalendariosani{
+                width: 50%;
+                display: flex;
+                margin: 35px;
+                margin-left: 25%;
+            }
         </style>
         <title>
             rdr2.com
@@ -21,31 +41,30 @@
         <nav class="menu">
             <ul>
                 <li><img class="logo" src="img/Red_Dead_Redemption_2_Logo.png"></li>
-                <li><a class="textindex" href="index.html"><b>Inicio</b></a></li>
-                <li><a class="textindex" href="historia.html" ><b>Historia</b></a></li>
-                <li><a class="textindex" href="..." ><b>Personagens</b></a></li>
-                <li><a class="textindex" href="" id="btn-compendio"><b>Compêndio</b></a></li>
-                <li><a class="textindex" href="animaislend.html" ><b>Animais Lendarios</b></a></li>
-                <li><a class="textindex" href="..." ><b>Peixes Lendarios</b></a></li>   
-                <li><a class="textindex" href="..." ><b>Desafios</b></a></li>  
-                <li><a class="textindex" href="..." ><b>Premios</b></a></li>  
-                <li><a class="textindex" href="..." ><b>Premios</b></a></li>              
+                <li class="item"><a class="textindex" href="index.html"><b>Inicio</b></a></li>
+                <li class="item"><a class="textindex" href="historia.html" ><b>Historia</b></a></li>
+                <li class="item"><a class="textindex" href="personagens.html" ><b>Personagens</b></a></li>
+                <li class="item"><a class="textindex" href="" id="btn-compendio"><b>Compêndio</b></a></li>
+                <li class="item"><a class="textindex" href="animaislend.html" ><b>Animais Lendarios</b></a></li>
+                <li class="item"><a class="textindex" href="..."><b>Peixes Lendarios</b></a></li>   
+                <li class="item"><a class="textindex" href="..." ><b>Desafios</b></a></li>  
+                <li class="item"><a class="textindex" href="..." ><b>Premios</b></a></li>  
+                <li class="item"><a class="textindex" href="..." ><b>Premios</b></a></li>              
             </ul>
         </nav>
 
         <!-- Submenu Compêndio -->
         <nav class="menu-compendio" id="submenu-compendio">
             <ul>
-                <li><p class="espacamento">&nbsp</p></li>
-                <li><a class="textindex" href="#"><b>1</b></a></li>
-                <li><a class="textindex" href="#" ><b>2</b></a></li>
-                <li><a class="textindex" href="..." ><b>3s</b></a></li>
-                <li><a class="textindex" href="..." ><b>Compêndio</b></a></li>
-                <li><a class="textindex" href="..." ><b>Animais Lendarios</b></a></li>
-                <li><a class="textindex" href="..." ><b>Peixes Lendarios</b></a></li>   
-                <li><a class="textindex" href="..." ><b>Desafios</b></a></li>  
-                <li><a class="textindex" href="..." ><b>Premios</b></a></li>  
-                <li><a class="textindex" href="..." ><b>Premios</b></a></li>              
+                <li class="item"><a class="textindex" href="#"><b>Animais</b></a></li>
+                <li class="item"><a class="textindex" href="#" ><b>equipamentos</b></a></li>
+                <li class="item"><a class="textindex" href="..." ><b>Peixes</b></a></li>
+                <li class="item"><a class="textindex" href="..." ><b>Compêndio</b></a></li>
+                <li class="item"><a class="textindex" href="..." ><b>gangues</b></a></li>
+                <li class="item"><a class="textindex" href="..." ><b>plantas</b></a></li>   
+                <li class="item"><a class="textindex" href="..." ><b>cavalos</b></a></li>  
+                <li class="item"><a class="textindex" href="..." ><b>armas</b></a></li>  
+                <li class="item"><a class="textindex" href="..." ><b>cartas de cigarro</b></a></li>              
             </ul>
         </nav>        
         <script>
@@ -74,6 +93,16 @@
         <section class="conteudo">
             <h1 class="titulolend">Animais Lendarios</h1>
             <main>
+                <section>
+                    <p>&nbsp</p>
+                    <p class="explicacao">&nbspOs animais lendarios são liberados após o segundo capitulo, assim que a gente acompanha Hosea a caçar um animal que era descrito como uma aberração, por conta de seu tamanho e força (Missão "Saida Perseguida por um Ego ferido"), porém a caça é interrompida e o Arthur fica livre para continuar ou ir com ele até o acampamento.</p>
+                    <p class="explicacao">Assim que a caça é interrompida, recebemos o mapa com a localização de todos os animais:</p>
+                    <p>&nbsp</p>
+                    <img class="mapalendariosani" src="img/MapaAnimaisLend.webp">
+                    <p>&nbsp</p>
+                    <p class="explicacao">Os animais que estão marcados no mapa são:</p>
+                    <p>&nbsp</p>
+                </section>
                 <h2 class="tittleanilend">1. Puma</h2>
                 <section class="lendarios">
                     <section class="animaislend">
@@ -241,286 +270,405 @@
                 </section>
                 <br>
                 <p>&nbsp</p>
-                // Feito até Aqui
+                
                 <h2 class="tittleanilend">6. Bisão Branco</h2>
                 <section class="lendarios">
                     <section class="animaislend">
-                        <img class="imagensanimaislen" src="img/loclendani/pumaloc.PNG">
+                        <img class="imagensanimaislen" src="img/loclendani/bisaobrancoloc.PNG">
                     </section>
                     <section class="animaislend">
-                        <img class="imagensanimaislen" src="img/animaislendgame/pumagame.webp">
+                        <img class="imagensanimaislen" src="img/animaislendgame/bisaobrancogame.webp">
                     </section>
                 </section>
                 <section>
-                    <p class="explicacao">&nbspA Puma Lendária em Red Dead Redemption 2 é um dos animais lendários que os jogadores podem caçar para obter peles especiais e criar equipamentos únicos. Esse animal é conhecido por sua força e agilidade, tornando a caça um grande desafio.</p>
+                    <p class="explicacao">&nbspO Bisão Branco Lendário em Red Dead Redemption 2 é um dos animais lendários que os jogadores podem caçar para obter peles especiais e criar equipamentos únicos. Esse animal é conhecido por sua resistência e força, tornando a caça um desafio interessante.</p>
                     <br>
                     <h3 class="subtitulolendani">Localização:</h3>
                     <br>
-                    <p class="explicacao">&nbspA Puma Lendária pode ser encontrada na região de Gaptooth Ridge, no extremo oeste do mapa, perto de Tumbleweed, em New Austin. Essa área só fica acessível para Arthur Morgan na fase final do jogo ou no epílogo com John Marston.</p>
+                    <p class="explicacao">&nbspO Bisão Branco pode ser encontrado na região do Lago Isabella, no norte de *Ambarino. Essa área é coberta por neve, o que pode dificultar a visibilidade do animal. </p>
                     <br>
                     <h3 class="subtitulolendani">Dicas para caça:</h3>
                     <br>
                     <ul>
-                        <li class="listacaca"><p class="explicacao">• <u>Use o Olho de Águia</u> para encontrar rastros e fezes da puma.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Esteja bem armado:</u> A puma é extremamente rápida e pode atacar de surpresa. Rifles de alta potência ou escopetas são recomendados.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Fique atento ao minimapa:</u> O ponto vermelho pode indicar um ataque iminente.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Mantenha distância:</u> Ao contrário de alguns outros animais lendários, a Puma Lendária pode facilmente matar o jogador com um único ataque.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Use o Olho de Águia</u> para encontrar rastros e fezes do bisão branco.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Esteja bem armado:</u> O bisão é resistente e pode exigir várias balas para ser abatido. Rifles de alta potência são recomendados</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Fique atento ao minimapa:</u> O ponto branco indicará a localização do animal.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Mantenha distância:</u>  Apesar de não ser agressivo como predadores, o bisão pode fugir rapidamente ou reagir caso se sinta ameaçado. </p></li>
                     </ul>
                     <br>
                     <h3 class="subtitulolendani">Recompensas:</h3>
                     <br>
-                    <p class="explicacao">&nbspAo caçar e esfolar a Puma Lendária, você pode usar sua pele para fabricar roupas especiais com o Trapper (caçador/trapper que cria equipamentos exclusivos). Além disso, sua carcaça pode ser vendida por um bom preço.</P>
+                    <p class="explicacao">&nbspAo caçar e esfolar o Bisão Branco Lendário, você pode usar sua pele para fabricar roupas especiais com o Trapper (caçador/trapper que cria equipamentos exclusivos). Além disso, sua carcaça pode ser vendida por um bom preço.</P>
                 </section>
                 <br>
                 <p>&nbsp</p>
                 <h2 class="tittleanilend">7. Lobo</h2>
                 <section class="lendarios">
                     <section class="animaislend">
-                        <img class="imagensanimaislen" src="img/loclendani/pumaloc.PNG">
+                        <img class="imagensanimaislen" src="img/loclendani/loboloc.png">
                     </section>
                     <section class="animaislend">
-                        <img class="imagensanimaislen" src="img/animaislendgame/pumagame.webp">
+                        <img class="imagensanimaislen" src="img/animaislendgame/lobogame.webp">
                     </section>
                 </section>
                 <section>
-                    <p class="explicacao">&nbspA Puma Lendária em Red Dead Redemption 2 é um dos animais lendários que os jogadores podem caçar para obter peles especiais e criar equipamentos únicos. Esse animal é conhecido por sua força e agilidade, tornando a caça um grande desafio.</p>
+                    <p class="explicacao">&nbspO Lobo Lendário em Red Dead Redemption 2 é um dos animais lendários que os jogadores podem caçar para obter peles especiais e criar equipamentos únicos. Esse animal é conhecido por sua agressividade e astúcia, tornando a caça um desafio perigoso.</p>
                     <br>
                     <h3 class="subtitulolendani">Localização:</h3>
                     <br>
-                    <p class="explicacao">&nbspA Puma Lendária pode ser encontrada na região de Gaptooth Ridge, no extremo oeste do mapa, perto de Tumbleweed, em New Austin. Essa área só fica acessível para Arthur Morgan na fase final do jogo ou no epílogo com John Marston.</p>
+                    <p class="explicacao">&nbspO Lobo Lendário pode ser encontrado na região de Cotorra Springs, em Ambarino. Essa área é aberta, facilitando a visibilidade do animal, mas também tornando o jogador mais vulnerável a ataques surpresa.</p>
                     <br>
                     <h3 class="subtitulolendani">Dicas para caça:</h3>
                     <br>
                     <ul>
-                        <li class="listacaca"><p class="explicacao">• <u>Use o Olho de Águia</u> para encontrar rastros e fezes da puma.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Esteja bem armado:</u> A puma é extremamente rápida e pode atacar de surpresa. Rifles de alta potência ou escopetas são recomendados.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Fique atento ao minimapa:</u> O ponto vermelho pode indicar um ataque iminente.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Mantenha distância:</u> Ao contrário de alguns outros animais lendários, a Puma Lendária pode facilmente matar o jogador com um único ataque.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Use o Olho de Águia</u> para encontrar rastros e fezes do lobo.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Esteja bem armado:</u> O lobo é ágil e pode atacar em movimento. Rifles de alta precisão ou escopetas são recomendados para neutralizá-lo rapidamente. </p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Fique atento ao minimapa:</u> O ponto vermelho indicará um ataque iminente. O lobo pode atacar de surpresa, então esteja preparado.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Mantenha-se em uma posição segura:</u> Subir em pedras ou áreas elevadas pode impedir que o lobo ataque facilmente. </p></li>
                     </ul>
                     <br>
                     <h3 class="subtitulolendani">Recompensas:</h3>
                     <br>
-                    <p class="explicacao">&nbspAo caçar e esfolar a Puma Lendária, você pode usar sua pele para fabricar roupas especiais com o Trapper (caçador/trapper que cria equipamentos exclusivos). Além disso, sua carcaça pode ser vendida por um bom preço.</P>
+                    <ul>
+                        <li class="listacaca"><p class="explicacao">• <u>Dente de Lobo Lendário:</u> seus dentes podem ser usados para criar um talismã especial que melhora a resistência do jogador.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Pele de Lobo Lendário:</u> pode ser usada para fabricar roupas especiais no Trapper.</p></li>
+                    </ul>
                 </section>
                 <br>
                 <p>&nbsp</p>
                 <h2 class="tittleanilend">8. Urso</h2>
                 <section class="lendarios">
                     <section class="animaislend">
-                        <img class="imagensanimaislen" src="img/loclendani/pumaloc.PNG">
+                        <img class="imagensanimaislen" src="img/loclendani/ursoloc.png">
                     </section>
                     <section class="animaislend">
-                        <img class="imagensanimaislen" src="img/animaislendgame/pumagame.webp">
+                        <img class="imagensanimaislen" src="img/animaislendgame/ursogame.webp">
                     </section>
                 </section>
                 <section>
-                    <p class="explicacao">&nbspA Puma Lendária em Red Dead Redemption 2 é um dos animais lendários que os jogadores podem caçar para obter peles especiais e criar equipamentos únicos. Esse animal é conhecido por sua força e agilidade, tornando a caça um grande desafio.</p>
+                    <p class="explicacao">&nbspO Urso Lendário em Red Dead Redemption 2 é um dos animais lendários que os jogadores podem caçar para obter peles especiais e criar equipamentos únicos. Esse animal é extremamente forte e resistente, tornando a caça um desafio perigoso.</p>
                     <br>
                     <h3 class="subtitulolendani">Localização:</h3>
                     <br>
-                    <p class="explicacao">&nbspA Puma Lendária pode ser encontrada na região de Gaptooth Ridge, no extremo oeste do mapa, perto de Tumbleweed, em New Austin. Essa área só fica acessível para Arthur Morgan na fase final do jogo ou no epílogo com John Marston.</p>
+                    <p class="explicacao">&nbspO Urso Lendário pode ser encontrado na região de O’Creagh’s Run, em Grizzlies East, ao norte de Ambarino. Essa área é cercada por árvores e montanhas, dificultando a visibilidade e tornando os encontros com o urso ainda mais intensos.</p>
                     <br>
                     <h3 class="subtitulolendani">Dicas para caça:</h3>
                     <br>
                     <ul>
-                        <li class="listacaca"><p class="explicacao">• <u>Use o Olho de Águia</u> para encontrar rastros e fezes da puma.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Esteja bem armado:</u> A puma é extremamente rápida e pode atacar de surpresa. Rifles de alta potência ou escopetas são recomendados.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Fique atento ao minimapa:</u> O ponto vermelho pode indicar um ataque iminente.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Mantenha distância:</u> Ao contrário de alguns outros animais lendários, a Puma Lendária pode facilmente matar o jogador com um único ataque.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Use o Olho de Águia</u> para encontrar rastros, pegadas e fezes do urso.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Esteja bem armado:</u> Rifles de alta potência ou escopetas carregadas com balas explosivas são recomendados para abater o urso rapidamente.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Fique atento ao minimapa:</u> O urso pode atacar de surpresa. Se ele começar a correr em sua direção, tenha uma rota de fuga planejada. </p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Mantenha distância e atire com precisão:</u> O urso pode resistir a vários tiros e, se chegar perto, pode matar o jogador instantaneamente com um único ataque.</p></li>
                     </ul>
                     <br>
                     <h3 class="subtitulolendani">Recompensas:</h3>
                     <br>
-                    <p class="explicacao">&nbspAo caçar e esfolar a Puma Lendária, você pode usar sua pele para fabricar roupas especiais com o Trapper (caçador/trapper que cria equipamentos exclusivos). Além disso, sua carcaça pode ser vendida por um bom preço.</P>
+                    <ul>
+                        <li class="listacaca"><p class="explicacao">• <u>Garras de Urso Lendário:</u> suas garras podem ser usados para criar um talismã que diminui a degradação da resistênciado jogador em 10%.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Pele de Urso Lendário:</u> pode ser usada para fabricar roupas especiais no Trapper.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Gordura de Urso Lendário:</u> pode ser usada para fabricar tonicos</p></li>
+                    </ul>
                 </section>
                 <br>
                 <p>&nbsp</p>
                 <h2 class="tittleanilend">9. Alce</h2>
                 <section class="lendarios">
                     <section class="animaislend">
-                        <img class="imagensanimaislen" src="img/loclendani/pumaloc.PNG">
+                        <img class="imagensanimaislen" src="img/loclendani/alceloc.png">
                     </section>
                     <section class="animaislend">
-                        <img class="imagensanimaislen" src="img/animaislendgame/pumagame.webp">
+                        <img class="imagensanimaislen" src="img/animaislendgame/alcegame.webp">
                     </section>
                 </section>
                 <section>
-                    <p class="explicacao">&nbspA Puma Lendária em Red Dead Redemption 2 é um dos animais lendários que os jogadores podem caçar para obter peles especiais e criar equipamentos únicos. Esse animal é conhecido por sua força e agilidade, tornando a caça um grande desafio.</p>
+                    <p class="explicacao">&nbspO Alce Lendário em Red Dead Redemption 2 é um dos animais lendários que os jogadores podem caçar para obter peles especiais e criar equipamentos únicos. Esse animal é imponente e pode ser difícil de localizar devido ao seu habitat isolado. </p>
                     <br>
                     <h3 class="subtitulolendani">Localização:</h3>
                     <br>
-                    <p class="explicacao">&nbspA Puma Lendária pode ser encontrada na região de Gaptooth Ridge, no extremo oeste do mapa, perto de Tumbleweed, em New Austin. Essa área só fica acessível para Arthur Morgan na fase final do jogo ou no epílogo com John Marston.</p>
+                    <p class="explicacao">&nbspO Alce Lendário pode ser encontrado na região de Bacchus Station, ao norte de Fort Wallace, em Ambarino. Essa área é montanhosa e cercada por florestas densas, o que pode dificultar a visibilidade do animal. </p>
                     <br>
                     <h3 class="subtitulolendani">Dicas para caça:</h3>
                     <br>
                     <ul>
-                        <li class="listacaca"><p class="explicacao">• <u>Use o Olho de Águia</u> para encontrar rastros e fezes da puma.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Esteja bem armado:</u> A puma é extremamente rápida e pode atacar de surpresa. Rifles de alta potência ou escopetas são recomendados.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Fique atento ao minimapa:</u> O ponto vermelho pode indicar um ataque iminente.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Mantenha distância:</u> Ao contrário de alguns outros animais lendários, a Puma Lendária pode facilmente matar o jogador com um único ataque.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Use o Olho de Águia</u> para encontrar rastros, pegadas e fezes do alce. </p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Esteja bem armado:</u>  Apesar de não ser agressivo, o alce é resistente e pode exigir múltiplos tiros para ser abatido. Rifles de alta precisão são recomendados. </p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Fique atento ao minimapa:</u> O alce pode fugir rapidamente ao perceber sua presença. Movimente-se com cautela para não assustá-lo</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Aposte em tiros certeiros:</u> Um tiro na cabeça ou no coração pode abater o animal mais rapidamente e garantir uma melhor qualidade da pele. </p></li>
                     </ul>
                     <br>
                     <h3 class="subtitulolendani">Recompensas:</h3>
                     <br>
-                    <p class="explicacao">&nbspAo caçar e esfolar a Puma Lendária, você pode usar sua pele para fabricar roupas especiais com o Trapper (caçador/trapper que cria equipamentos exclusivos). Além disso, sua carcaça pode ser vendida por um bom preço.</P>
+                    <ul>
+                        <li class="listacaca"><p class="explicacao">• <u>Chifres de Alce Lendário:</u> seus Chifres podem ser usados para criar um talismã que atribui um bônus permanente de 10% a mais de itens saqueados de corpos inimigos</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Pele de Alce Lendário:</u> pode ser usada para fabricar roupas especiais no Trapper.</p></li>
+                    </ul>
                 </section>
                 <br>
                 <p>&nbsp</p>
                 <h2 class="tittleanilend">10. Castor</h2>
                 <section class="lendarios">
                     <section class="animaislend">
-                        <img class="imagensanimaislen" src="img/loclendani/pumaloc.PNG">
+                        <img class="imagensanimaislen" src="img/loclendani/castorloc.png">
                     </section>
                     <section class="animaislend">
-                        <img class="imagensanimaislen" src="img/animaislendgame/pumagame.webp">
+                        <img class="imagensanimaislen" src="img/animaislendgame/castorgame.webp">
                     </section>
                 </section>
                 <section>
-                    <p class="explicacao">&nbspA Puma Lendária em Red Dead Redemption 2 é um dos animais lendários que os jogadores podem caçar para obter peles especiais e criar equipamentos únicos. Esse animal é conhecido por sua força e agilidade, tornando a caça um grande desafio.</p>
+                    <p class="explicacao">&nbspO Castor Lendário em Red Dead Redemption 2 é um dos menores animais lendários do jogo, mas ainda assim oferece recompensas valiosas. Ele é ágil e pode ser difícil de acertar, tornando a caça um desafio para quem busca sua pele rara. </p>
                     <br>
                     <h3 class="subtitulolendani">Localização:</h3>
                     <br>
-                    <p class="explicacao">&nbspA Puma Lendária pode ser encontrada na região de Gaptooth Ridge, no extremo oeste do mapa, perto de Tumbleweed, em New Austin. Essa área só fica acessível para Arthur Morgan na fase final do jogo ou no epílogo com John Marston.</p>
+                    <p class="explicacao">&nbspO Castor Lendário pode ser encontrado na região de Lake Owanjila, a oeste de Strawberry, em West Elizabeth. Essa área tem muitas árvores e margens de rio, o que pode dificultar a visualização do animal. </p>
                     <br>
                     <h3 class="subtitulolendani">Dicas para caça:</h3>
                     <br>
                     <ul>
-                        <li class="listacaca"><p class="explicacao">• <u>Use o Olho de Águia</u> para encontrar rastros e fezes da puma.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Esteja bem armado:</u> A puma é extremamente rápida e pode atacar de surpresa. Rifles de alta potência ou escopetas são recomendados.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Fique atento ao minimapa:</u> O ponto vermelho pode indicar um ataque iminente.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Mantenha distância:</u> Ao contrário de alguns outros animais lendários, a Puma Lendária pode facilmente matar o jogador com um único ataque.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Use o Olho de Águia</u> para encontrar rastros, tocos roídos e fezes do castor.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Prefira armas de precisão:</u> Como o castor é pequeno e ágil, um rifle de precisão ou um arco com flechas de caça pode garantir um tiro limpo.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Fique atento ao minimapa:</u> O castor pode fugir para a água caso se sinta ameaçado. Para evitar isso, tente se posicionar estrategicamente entre ele e o rio. </p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Evite tiros no corpo inteiro:</u> O castor tem pouca resistência, então um único tiro bem colocado pode abatê-lo sem estragar a pele. </p></li>
                     </ul>
                     <br>
                     <h3 class="subtitulolendani">Recompensas:</h3>
                     <br>
-                    <p class="explicacao">&nbspAo caçar e esfolar a Puma Lendária, você pode usar sua pele para fabricar roupas especiais com o Trapper (caçador/trapper que cria equipamentos exclusivos). Além disso, sua carcaça pode ser vendida por um bom preço.</P>
+                    <ul>
+                        <li class="listacaca"><p class="explicacao">• <u>Dente de Castor Lendário:</u> seu dente pode ser usado para criar um talismã que atribui um bônus permanente de 10% de redução na degradação das armas</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Pele de Castor Lendário:</u> pode ser usada para fabricar roupas especiais no Trapper.</p></li>
+                    </ul>
                 </section>
                 <br>
                 <p>&nbsp</p>
                 <h2 class="tittleanilend">11. Javali</h2>
                 <section class="lendarios">
                     <section class="animaislend">
-                        <img class="imagensanimaislen" src="img/loclendani/pumaloc.PNG">
+                        <img class="imagensanimaislen" src="img/loclendani/javaliloc.png">
                     </section>
                     <section class="animaislend">
-                        <img class="imagensanimaislen" src="img/animaislendgame/pumagame.webp">
+                        <img class="imagensanimaislen" src="img/animaislendgame/javaligame.webp">
                     </section>
                 </section>
                 <section>
-                    <p class="explicacao">&nbspA Puma Lendária em Red Dead Redemption 2 é um dos animais lendários que os jogadores podem caçar para obter peles especiais e criar equipamentos únicos. Esse animal é conhecido por sua força e agilidade, tornando a caça um grande desafio.</p>
+                    <p class="explicacao">&nbspO Javali Lendário em Red Dead Redemption 2 é um dos animais lendários que os jogadores podem caçar para obter peles especiais e criar equipamentos únicos. Apesar de não ser agressivo, é um animal resistente e pode ser difícil de abater rapidamente. </p>
                     <br>
                     <h3 class="subtitulolendani">Localização:</h3>
                     <br>
-                    <p class="explicacao">&nbspA Puma Lendária pode ser encontrada na região de Gaptooth Ridge, no extremo oeste do mapa, perto de Tumbleweed, em New Austin. Essa área só fica acessível para Arthur Morgan na fase final do jogo ou no epílogo com John Marston.</p>
+                    <p class="explicacao">&nbspO Javali Lendário pode ser encontrado na região de Bluewater Marsh, ao norte de Lagras, em Lemoyne. Essa área pantanosa pode dificultar a movimentação, além de abrigar outros perigos, como jacarés. </p>
                     <br>
                     <h3 class="subtitulolendani">Dicas para caça:</h3>
                     <br>
                     <ul>
-                        <li class="listacaca"><p class="explicacao">• <u>Use o Olho de Águia</u> para encontrar rastros e fezes da puma.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Esteja bem armado:</u> A puma é extremamente rápida e pode atacar de surpresa. Rifles de alta potência ou escopetas são recomendados.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Fique atento ao minimapa:</u> O ponto vermelho pode indicar um ataque iminente.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Mantenha distância:</u> Ao contrário de alguns outros animais lendários, a Puma Lendária pode facilmente matar o jogador com um único ataque.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Use o Olho de Águia</u> para encontrar rastros, pegadas e fezes do javali. </p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Esteja bem armado:</u> O javali é robusto e pode exigir mais de um tiro para ser abatido. Rifles de alta precisão são recomendados. </p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Fique atento ao minimapa:</u> O javali pode fugir rapidamente ao perceber sua presença. Movimente-se com cautela para evitar que ele escape pelo pântano. </p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Escolha bem seu posicionamento:</u> Evite áreas muito abertas para não ser surpreendido por jacarés enquanto caça.</p></li>
                     </ul>
                     <br>
                     <h3 class="subtitulolendani">Recompensas:</h3>
                     <br>
-                    <p class="explicacao">&nbspAo caçar e esfolar a Puma Lendária, você pode usar sua pele para fabricar roupas especiais com o Trapper (caçador/trapper que cria equipamentos exclusivos). Além disso, sua carcaça pode ser vendida por um bom preço.</P>
+                    <ul>
+                        <li class="listacaca"><p class="explicacao">• <u>Presa de Javali Lendário:</u> sua presa pode ser usada para criar um talismã que atribui um bônus permanente de 10% a mais de ervas coletadas</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Pele de Javali Lendário:</u> pode ser usada para fabricar roupas especiais no Trapper.</p></li>
+                    </ul>
                 </section>
                 <br>
                 <p>&nbsp</p>
                 <h2 class="tittleanilend">12. Coiote</h2>
                 <section class="lendarios">
                     <section class="animaislend">
-                        <img class="imagensanimaislen" src="img/loclendani/pumaloc.PNG">
+                        <img class="imagensanimaislen" src="img/loclendani/coioteloc.png">
                     </section>
                     <section class="animaislend">
-                        <img class="imagensanimaislen" src="img/animaislendgame/pumagame.webp">
+                        <img class="imagensanimaislen" src="img/animaislendgame/coiotegame.webp">
                     </section>
                 </section>
                 <section>
-                    <p class="explicacao">&nbspA Puma Lendária em Red Dead Redemption 2 é um dos animais lendários que os jogadores podem caçar para obter peles especiais e criar equipamentos únicos. Esse animal é conhecido por sua força e agilidade, tornando a caça um grande desafio.</p>
+                    <p class="explicacao">&nbspO Coiote Lendário em Red Dead Redemption 2 é um dos animais lendários que os jogadores podem caçar para obter peles especiais e criar equipamentos únicos. Ele é ágil e furtivo, tornando a caça um desafio para quem busca sua pele rara. </p>
                     <br>
                     <h3 class="subtitulolendani">Localização:</h3>
                     <br>
-                    <p class="explicacao">&nbspA Puma Lendária pode ser encontrada na região de Gaptooth Ridge, no extremo oeste do mapa, perto de Tumbleweed, em New Austin. Essa área só fica acessível para Arthur Morgan na fase final do jogo ou no epílogo com John Marston.</p>
+                    <p class="explicacao">&nbspO Coiote Lendário pode ser encontrado na região de Dewberry Creek, ao sudoeste de Rhodes, em Lemoyne. Essa área é relativamente aberta, mas o animal pode se esconder entre arbustos e rochas, dificultando sua localização.</p>
                     <br>
                     <h3 class="subtitulolendani">Dicas para caça:</h3>
                     <br>
                     <ul>
-                        <li class="listacaca"><p class="explicacao">• <u>Use o Olho de Águia</u> para encontrar rastros e fezes da puma.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Esteja bem armado:</u> A puma é extremamente rápida e pode atacar de surpresa. Rifles de alta potência ou escopetas são recomendados.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Fique atento ao minimapa:</u> O ponto vermelho pode indicar um ataque iminente.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Mantenha distância:</u> Ao contrário de alguns outros animais lendários, a Puma Lendária pode facilmente matar o jogador com um único ataque.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Use o Olho de Águia</u> para encontrar rastros, pegadas e fezes do coiote. </p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Esteja bem armado:</u> Apesar de não ser resistente, o coiote é muito rápido. Rifles de precisão ou um arco com flechas de caça são recomendados para garantir um abate limpo. </p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Fique atento ao minimapa:</u> O coiote pode fugir assim que perceber sua presença. Tente se aproximar furtivamente para evitar que ele escape.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Acerte o tiro com precisão:</u> Um único disparo na cabeça ou no coração garantirá uma pele em melhor estado. </p></li>
                     </ul>
                     <br>
                     <h3 class="subtitulolendani">Recompensas:</h3>
                     <br>
-                    <p class="explicacao">&nbspAo caçar e esfolar a Puma Lendária, você pode usar sua pele para fabricar roupas especiais com o Trapper (caçador/trapper que cria equipamentos exclusivos). Além disso, sua carcaça pode ser vendida por um bom preço.</P>
+                    <ul>
+                        <li class="listacaca"><p class="explicacao">• <u>Garra de Coiote Lendário:</u> sua garra pode ser usada para criar um talismã que atribui um bônus permanente de 10% a mais de XP em todos os atributos principais.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Pele de Coiote Lendário:</u> pode ser usada para fabricar roupas especiais no Trapper.</p></li>
+                    </ul>
                 </section>
                 <br>
                 <p>&nbsp</p>
                 <h2 class="tittleanilend">13. Raposa</h2>
                 <section class="lendarios">
                     <section class="animaislend">
-                        <img class="imagensanimaislen" src="img/loclendani/pumaloc.PNG">
+                        <img class="imagensanimaislen" src="img/loclendani/raposaloc.png">
                     </section>
                     <section class="animaislend">
-                        <img class="imagensanimaislen" src="img/animaislendgame/pumagame.webp">
+                        <img class="imagensanimaislen" src="img/animaislendgame/raposagame.webp">
                     </section>
                 </section>
                 <section>
-                    <p class="explicacao">&nbspA Puma Lendária em Red Dead Redemption 2 é um dos animais lendários que os jogadores podem caçar para obter peles especiais e criar equipamentos únicos. Esse animal é conhecido por sua força e agilidade, tornando a caça um grande desafio.</p>
+                    <p class="explicacao">&nbspA Raposa Lendária em Red Dead Redemption 2 é um dos animais lendários que os jogadores podem caçar para obter peles especiais e criar equipamentos únicos. Ela é ágil e astuta, tornando a caça um desafio para quem busca sua pele rara. </p>
                     <br>
                     <h3 class="subtitulolendani">Localização:</h3>
                     <br>
-                    <p class="explicacao">&nbspA Puma Lendária pode ser encontrada na região de Gaptooth Ridge, no extremo oeste do mapa, perto de Tumbleweed, em New Austin. Essa área só fica acessível para Arthur Morgan na fase final do jogo ou no epílogo com John Marston.</p>
+                    <p class="explicacao">&nbspA Raposa Lendária pode ser encontrada na região de Mattock Pond, ao norte de Rhodes, em Lemoyne. Essa área tem vegetação densa, o que pode dificultar a visibilidade do animal. </p>
                     <br>
                     <h3 class="subtitulolendani">Dicas para caça:</h3>
                     <br>
                     <ul>
-                        <li class="listacaca"><p class="explicacao">• <u>Use o Olho de Águia</u> para encontrar rastros e fezes da puma.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Esteja bem armado:</u> A puma é extremamente rápida e pode atacar de surpresa. Rifles de alta potência ou escopetas são recomendados.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Fique atento ao minimapa:</u> O ponto vermelho pode indicar um ataque iminente.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Mantenha distância:</u> Ao contrário de alguns outros animais lendários, a Puma Lendária pode facilmente matar o jogador com um único ataque.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Use o Olho de Águia</u> para encontrar rastros, pegadas e fezes da raposa.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Esteja bem armado:</u> A raposa é pequena e veloz, então um rifle de precisão ou um arco com flechas de caça são ideais para garantir um tiro limpo. </p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Fique atento ao minimapa:</u> A raposa pode fugir assim que perceber sua presença. Movimente-se com cautela para evitar que ela escape. </p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Aposte em tiros certeiros:</u> Um único disparo na cabeça ou no coração garantirá uma pele em melhor estado.</p></li>
                     </ul>
                     <br>
                     <h3 class="subtitulolendani">Recompensas:</h3>
                     <br>
-                    <p class="explicacao">&nbspAo caçar e esfolar a Puma Lendária, você pode usar sua pele para fabricar roupas especiais com o Trapper (caçador/trapper que cria equipamentos exclusivos). Além disso, sua carcaça pode ser vendida por um bom preço.</P>
+                    <ul>
+                        <li class="listacaca"><p class="explicacao">• <u>Dente de Raposa Lendária:</u> seu dente pode ser usada para criar um talismã que atribui um bônus permanente de 10% a mais na duração dos efeitos do Olho de Águia</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Pele de Raposa Lendária:</u> pode ser usada para fabricar roupas especiais no Trapper.</p></li>
+                    </ul>
                 </section>
                 <br>
                 <p>&nbsp</p>
                 <h2 class="tittleanilend">14. Uapiti</h2>
                 <section class="lendarios">
                     <section class="animaislend">
-                        <img class="imagensanimaislen" src="img/loclendani/pumaloc.PNG">
+                        <img class="imagensanimaislen" src="img/loclendani/uapitloci.png">
                     </section>
                     <section class="animaislend">
-                        <img class="imagensanimaislen" src="img/animaislendgame/pumagame.webp">
+                        <img class="imagensanimaislen" src="img/animaislendgame/uapitigame.webp">
                     </section>
                 </section>
                 <section>
-                    <p class="explicacao">&nbspA Puma Lendária em Red Dead Redemption 2 é um dos animais lendários que os jogadores podem caçar para obter peles especiais e criar equipamentos únicos. Esse animal é conhecido por sua força e agilidade, tornando a caça um grande desafio.</p>
+                    <p class="explicacao">&nbspO Uapiti Lendário em Red Dead Redemption 2 é uma das caças lendárias que os jogadores podem buscar para obter peles raras e fabricar equipamentos exclusivos. Este cervo grande e majestoso é uma caça desafiadora devido ao seu tamanho e à sua habilidade em escapar pelas florestas densas. </p>
                     <br>
                     <h3 class="subtitulolendani">Localização:</h3>
                     <br>
-                    <p class="explicacao">&nbspA Puma Lendária pode ser encontrada na região de Gaptooth Ridge, no extremo oeste do mapa, perto de Tumbleweed, em New Austin. Essa área só fica acessível para Arthur Morgan na fase final do jogo ou no epílogo com John Marston.</p>
+                    <p class="explicacao">&nbspO Uapiti Lendário pode ser encontrado na região de Cotorra Springs, a nordeste de Lake Owanjila, em Ambarino. Essa área é marcada por montanhas altas e vegetação espessa, dificultando a caça. </p>
                     <br>
                     <h3 class="subtitulolendani">Dicas para caça:</h3>
                     <br>
                     <ul>
-                        <li class="listacaca"><p class="explicacao">• <u>Use o Olho de Águia</u> para encontrar rastros e fezes da puma.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Esteja bem armado:</u> A puma é extremamente rápida e pode atacar de surpresa. Rifles de alta potência ou escopetas são recomendados.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Fique atento ao minimapa:</u> O ponto vermelho pode indicar um ataque iminente.</p></li>
-                        <li class="listacaca"><p class="explicacao">• <u>Mantenha distância:</u> Ao contrário de alguns outros animais lendários, a Puma Lendária pode facilmente matar o jogador com um único ataque.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Use o Olho de Águia</u> para identificar rastros, fezes e pegadas do Uapiti. </p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Esteja bem armado:</u> O Uapiti é grande, então um rifle de precisão ou um arco com flechas de caça são as melhores opções para um disparo fatal. </p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Mantenha-se discreto:</u> O Uapiti tende a fugir rapidamente, então use um *apito* ou movimentos silenciosos para se aproximar sem ser detectado.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Aposte em tiros certeiros:</u> Um disparo na cabeça ou no coração proporcionará uma pele de melhor qualidade, essencial para fabricar itens exclusivos.</p></li>
                     </ul>
                     <br>
                     <h3 class="subtitulolendani">Recompensas:</h3>
                     <br>
-                    <p class="explicacao">&nbspAo caçar e esfolar a Puma Lendária, você pode usar sua pele para fabricar roupas especiais com o Trapper (caçador/trapper que cria equipamentos exclusivos). Além disso, sua carcaça pode ser vendida por um bom preço.</P>
+                    <ul>
+                        <li class="listacaca"><p class="explicacao">• <u>Chifre de Uapiti Lendário:</u> sua garra pode ser usada para criar um talismã que atribui um bônus permanente de 10% a mais na resistência ao frio.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Pele de Uapiti Lendário:</u> pode ser usada para fabricar roupas especiais no Trapper.</p></li>
+                    </ul>
                 </section>
                 <br>
                 <p>&nbsp</p>
+                <section>
+                    <p class="explicacao">Além dos animais que são marcados no mapa acima, existem também que são liberados conforme o caminhar de sua gameplay, eles são:</p>
+                    <br>
+                <p>&nbsp</p>
+                <h2 class="tittleanilend">Pantera (Apos completar o desafio "Mestre Caçador - 9)</h2>
+                <section class="lendarios">
+                    <section class="animaislend">
+                        <img class="imagensanimaislen" src="img/loclendani/panteraloc.png">
+                    </section>
+                    <section class="animaislend">
+                        <img class="imagensanimaislen" src="img/animaislendgame/castorgame.webp">
+                    </section>
+                </section>
+                <section>
+                    <p class="explicacao">&nbspA Pantera Lendária em Red Dead Redemption 2 é um dos animais mais raros e perigosos do jogo. Extremamente ágil e furtiva, essa fera pode atacar sem aviso, tornando sua caça um desafio intenso até para os caçadores mais experientes.  </p>
+                    <br>
+                    <h3 class="subtitulolendani">Localização:</h3>
+                    <br>
+                    <p class="explicacao">&nbspA Pantera Lendária pode ser encontrada na região de Bolger Glade, ao sul de Rhodes, em Lemoyne. A área é repleta de árvores e vegetação densa, o que torna a visibilidade limitada e favorece a pantera em emboscadas.  </p>
+                    <br>
+                    <h3 class="subtitulolendani">Dicas para caça:</h3>
+                    <br>
+                    <ul>
+                        <li class="listacaca"><p class="explicacao">• <u>Use o Olho de Águia:</u> Isso ajudará a encontrar rastros como pegadas e fezes.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Fique sempre atento:</u> A Pantera Lendária é extremamente furtiva e pode atacar de surpresa. Escute atentamente os sons ao redor. </p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Esteja bem armado:</u> Use um rifle de precisão ou uma espingarda de cano duplo para garantir um tiro poderoso e rápido. </p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Mantenha-se montado:</u>  Se for atacado, estar a cavalo pode ajudar a fugir ou reagir rapidamente. </p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Atire rápido:</u>  Se a pantera te notar, ela atacará quase imediatamente. Um tiro na cabeça é o ideal para um abate limpo. </p></li>
+                    </ul>
+                    <br>
+                    <h3 class="subtitulolendani">Recompensas:</h3>
+                    <br>
+                    <ul>
+                        <li class="listacaca"><p class="explicacao">• <u>Olho de Pantera Lendária:</u> seu olho pode ser usado para criar um talismã que atribui um bônus permanente de 10% a mais de experiência de habilidade</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Pele de Pantera Lendária:</u> pode ser usada para fabricar roupas especiais no Trapper.</p></li>
+                    </ul>
+                </section>
+                <br>
+                <p>&nbsp</p>
+                <h2 class="tittleanilend">Jacaré (Capitulo 4)</h2>
+                <section class="lendarios">
+                    <section class="animaislend">
+                        <img class="imagensanimaislen" src="img/loclendani/jacareloc.png">
+                    </section>
+                    <section class="animaislend">
+                        <img class="imagensanimaislen" src="img/animaislendgame/jacaregame.webp">
+                    </section>
+                </section>
+                <section>
+                    <p class="explicacao">&nbspO Jacaré Lendário em Red Dead Redemption 2 é uma das criaturas mais intimidantes e letais do jogo. Com um tamanho colossal e uma força devastadora, esse predador impõe respeito e exige cautela para ser caçado com sucesso.</p>
+                    <br>
+                    <h3 class="subtitulolendani">Localização:</h3>
+                    <br>
+                    <p class="explicacao">&nbspO Jacaré Lendário pode ser encontrado na região pantanosa de Lakay, ao norte de Saint Denis, em Lemoyne. A área é repleta de água, vegetação densa e neblina, dificultando a visibilidade e aumentando o perigo da caçada. </p>
+                    <br>
+                    <h3 class="subtitulolendani">Dicas para caça:</h3>
+                    <br>
+                    <ul>
+                        <li class="listacaca"><p class="explicacao">• <u>Use o Olho de Águia:</u> Isso ajudará a encontrar rastros como pegadas e fezes.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Espere o momento certo:</u> O Jacaré Lendário só fica disponível após completar a missão principal Country Pursuits.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Esteja bem armado:</u>  Um rifle Springfield, um rifle Rolling Block ou uma espingarda de cano longo são essenciais para causar dano suficiente antes que ele ataque.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Ataque à distância:</u>   O jacaré é lento, mas letal de perto. Mantenha uma distância segura e use munição potente. </p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Evite a água:</u>  Não entre na água próxima ao jacaré, pois ele pode atacá-lo instantaneamente sem chance de reação.</p></li>
+                    </ul>
+                    <br>
+                    <h3 class="subtitulolendani">Recompensas:</h3>
+                    <br>
+                    <ul>
+                        <li class="listacaca"><p class="explicacao">• <u>Dente de Jacare Lendário:</u> seu olho pode ser usado para criar um talismã que atribui um bônus permanente de 10% de redução na degradação das armas.</p></li>
+                        <li class="listacaca"><p class="explicacao">• <u>Pele de Jacare Lendário:</u> pode ser usada para fabricar roupas especiais no Trapper.</p></li>
+                    </ul>
+                </section>
+                <br>
+                <p>&nbsp</p>
+                </section>
+                <section class="controle-rodape">
+                    <footer class="rodape">
+                        <section>
+                            <img class="rockstar-rodape" src="img/rockstar.png">
+                        </section>
+                        <br>
+                        <br>
+                        <nav>
+                            <section class="feitopor">
+                                <p>feito por leonardo:</p>
+                            </section>
+                            <section class="redes">
+                                <a href="https://github.com/melatizx" target="_blank"><img src="img/github.png"></a>
+                                <a href="https://instagram.com/melatizx" target="_blank"><img  src="img/instagram.png"></a>
+                                <a href="https://br.linkedin.com/in/leonardo-melati-566884318?trk=people-guest_people_search-card" target="_blank"><img src="img/linkedin.png"></a>
+                            </section>
+                        </nav>
+                    </footer>
+                </section>
             </main>
         </section>
     </body>

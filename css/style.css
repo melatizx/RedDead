@@ -1,19 +1,19 @@
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* STYLE CSS RED DEAD REDEMPTION II */
+
+/* Fonte */
 @font-face {
     font-family: chineserocksrog;
     src: url(fonte/chineserocksrg.otf);
-  }
+}
+/* -- */
 
+/* Corpo */
 html{
     height: 100%;
     font-family: chineserocksrog;
-    /* text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black; */
     letter-spacing: 1.05pt;
 }
+
 body{
     margin: 0;
     display: flex;
@@ -23,59 +23,12 @@ body{
     max-height: 100vh;
     overflow: hidden;
 }
+
 p{
     background-color: white;
     color: white;
     font-size: large;
 }
-
-.titulo-cap{
-    color: red;
-    font-size: 30px;   
-}
-.hist{
-    color: white;
-    font-size: 20px;
-    margin:15px 0;
-}
-
-.textindex{
-    padding-left: 30px;
-    padding-right: 0%;
-    margin-right: 0px;
-    border: 0px;
-    color: white;
-    font-size: xx-large;
-    text-decoration: none;
-}
-.imghist{
-    width: 40%;
-    margin: 35px;
-    margin-left: 30%;
-    margin-bottom: 70px;
-}
-
-nav{
-    background-color: red;
-    width: 400px;
-    max-width: 400px;
-    height: -webkit-fill-available;
-    padding-left: 15px;
-}
-.menu ul{
-    height: 100vh;
-}
-ul{
-    list-style: none;
-    margin-left: -40px;
-    color: white;
-}
-li{
-    margin: 10px 0;
-    padding: 5px 0px;
-    background-color: red;
-}
-
 .conteudo{
     flex-basis: 80%;   
     overflow-y: auto;
@@ -91,27 +44,102 @@ li{
     width: 100%;
     background-color: black;
 }
+
 .logo{
     width: 350px;
     padding-left: 30px;
 }
+
 .rockstar{
     width: 100px;
-    margin-top: 820px;
-    margin-left: 1380px;
+    margin-top: 810px;
+    margin-left: 1365px;
     margin-bottom: 0px;
     margin-right: 0px;
 }
 
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -- */
+
+/* Menu */
+nav{
+    background-color: red;
+    width: 400px;
+    max-width: 400px;
+    height: -webkit-fill-available;
+    padding-left: 18px;
+}
+
+.textindex{
+    padding-left: 30px;
+    padding-right: 0%;
+    margin-right: 0px;
+    border: 0px;
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.menu ul{
+    height: 100vh;
+}
+
+ul{
+    list-style: none;
+    margin-left: -40px;
+    color: white;
+}
+
+li{
+    margin: 10px 0;
+    padding: 20px 0px;
+    background-color: red;
+}
+
+ul li.item{
+    height: 45px;
+}
+
+
 .menu-compendio{
     float: left;
-    position: relative;
+    position: absolute;
     display: none;
-    background-color: wheat;
-    color: black;
-    width: 100%;
-    height: 360px;
+    background-color: red;
+    width: 400px;
+    max-width: 400px;
+    height: -webkit-fill-available;
+    padding-left: 15px;   
 }
+/* -- */
+
+/* Historia */
+.titulo-cap{
+    color: red;
+    font-size: 30px;   
+}
+
+.hist{
+    color: white;
+    font-size: 20px;
+    margin:15px 0;
+}
+
+
+.imghist{
+    width: 40%;
+    margin: 35px;
+    margin-left: 30%;
+    margin-bottom: 70px;
+}
+/* -- */
+
+/* Animais lendarios */
 .lendarios{
     display: flex;
     flex-direction: row;
@@ -136,25 +164,77 @@ li{
     margin-left: 50px;
     margin-right: 50px;
 }
+
 .subtitulolendani{
     font-size: 25px;
     margin-left: 50px;
     margin-right: 50px;
 }
+
 .listacaca{
     background-color: white;
     padding: 0;
     margin-left: 70px;
     margin-right: 50px;
 }
-.menu-compendio{
-    float: left;
-    position: absolute;
-    display: none;
-    background-color: red;
-    width: 400px;
-    max-width: 400px;
-    height: -webkit-fill-available;
-    padding-left: 15px;
-    
+/* -- */
+
+/* Rodape */
+.controle-rodape{
+    display: flex;
+    width: 100%;
+}
+.rockstar-rodape{
+    width: 80px;
+}
+
+footer{
+    background-color: black;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+footer p{
+    background-color: black;
+}
+
+.controle-rodape footer nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    height: 30px;
+    background-color: black;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+}
+
+.feitopor{
+   width: 100%;
+}
+
+.redes a{
+    width: 60px;
+}
+
+.redes img{
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+}
+/* -- */
+
+/* Hover */
+.textindex:hover{
+    color: gainsboro;
+    font-size: 38px;
+}
+.redes img:hover{
+    width: 25px;
+    height: 25px;
 }

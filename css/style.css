@@ -116,6 +116,28 @@ ul li.item{
     height: -webkit-fill-available;
     padding-left: 15px;   
 }
+
+.menu-desafios{
+    float: left;
+    position: absolute;
+    display: none;
+    background-color: red;
+    width: 400px;
+    max-width: 400px;
+    height: -webkit-fill-available;
+    padding-left: 15px;   
+}
+
+.menu-lendarios{
+    float: left;
+    position: absolute;
+    display: none;
+    background-color: red;
+    width: 400px;
+    max-width: 400px;
+    height: -webkit-fill-available;
+    padding-left: 15px;   
+}
 /* -- */
 
 /* Historia */

@@ -63,6 +63,10 @@ p{
     padding: 0;
     box-sizing: border-box;
 }
+.titulo{
+    text-align: center;
+    font-size: 60px;
+}
 
 /* -- */
 
@@ -81,7 +85,7 @@ nav{
     margin-right: 0px;
     border: 0px;
     color: white;
-    font-size: 35px;
+    font-size: 45px;
     text-decoration: none;
 }
 
@@ -99,6 +103,7 @@ li{
     margin: 10px 0;
     padding: 20px 0px;
     background-color: red;
+    margin-bottom: 30px;
 }
 
 ul li.item{
@@ -114,7 +119,7 @@ ul li.item{
     width: 400px;
     max-width: 400px;
     height: -webkit-fill-available;
-    padding-left: 15px;   
+    padding-left: 20px;   
 }
 
 .menu-desafios{
@@ -125,7 +130,7 @@ ul li.item{
     width: 400px;
     max-width: 400px;
     height: -webkit-fill-available;
-    padding-left: 15px;   
+    padding-left: 20px;   
 }
 
 .menu-lendarios{
@@ -136,7 +141,7 @@ ul li.item{
     width: 400px;
     max-width: 400px;
     height: -webkit-fill-available;
-    padding-left: 15px;   
+    padding-left: 20px;   
 }
 /* -- */
 
@@ -201,6 +206,21 @@ ul li.item{
 }
 /* -- */
 
+/* Personagens */
+.personagens{
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+.p1, .p2, .p3{
+    margin: 40px;
+    color: black;
+}
+
+.imgp{
+    width: 400px;
+}
+
 /* Rodape */
 .controle-rodape{
     display: flex;
@@ -254,9 +274,10 @@ footer p{
 /* Hover */
 .textindex:hover{
     color: gainsboro;
-    font-size: 38px;
+    font-size: 48px;
 }
 .redes img:hover{
     width: 25px;
     height: 25px;
 }
+/* -- */

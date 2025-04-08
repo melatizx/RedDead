@@ -35,14 +35,17 @@ p{
     padding: 20px;
 }
 
-.conteudo.principal{
-    background-image: url('../img/Red-Dead-Redemption-2.jpg.webp');
-    background-repeat: no-repeat;
-    background-position-x: 70%; 
-    background-position-y: 50%;
-    background-color: #393d42;
+.imgprincipal{
     width: 100%;
+    height: 99%;
+    padding: 0;
+    margin: 0;
+}
+
+.conteudo.principal{
     background-color: black;
+    margin: 0;
+    padding: 0;
 }
 
 .logo{
@@ -210,15 +213,21 @@ ul li.item{
 .personagens{
     display: flex;
     flex-direction: row;
-    align-items: center
+    align-items: stretch;
+    align-content: center;
+    
 }
-.p1, .p2, .p3{
-    margin: 40px;
+.p{
+    margin: 30px;
     color: black;
+    border-style: solid;
+    padding: 10px;
+    border-color: red;
 }
 
 .imgp{
     width: 400px;
+    height: 240px;
 }
 
 /* Rodape */
@@ -276,8 +285,14 @@ footer p{
     color: gainsboro;
     font-size: 48px;
 }
+
 .redes img:hover{
     width: 25px;
     height: 25px;
 }
+
+.personagens .p:hover{
+    transform: scale(1.05); 
+}
 /* -- */
+
